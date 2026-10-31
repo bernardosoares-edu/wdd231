@@ -11,6 +11,7 @@ botaoMenu.addEventListener("click", () => {
   }
 });
 
+// Wayfinding
 const paginaAtual = window.location.pathname;
 const links = document.querySelectorAll("nav a");
 
