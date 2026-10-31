@@ -1,5 +1,10 @@
 const anoAtual = document.getElementById("anoAtual");
-const ano = new Date().getFullYear();
-anoAtual.textContent = ano;
+const ultimaModificacao = document.getElementById("ultimaModificacao");
 
-document.getElementById("ultimaModificacao").innerHTML = `Última Modificação: ${document.lastModified}`;
+if (anoAtual) {
+    anoAtual.textContent = new Date().getFullYear();
+}
+
+if (ultimaModificacao) {
+    ultimaModificacao.textContent = `Última Modificação: ${document.lastModified}`;
+}
