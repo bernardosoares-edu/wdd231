@@ -1,0 +1,86 @@
+@media screen and (min-width: 640px) {
+  :root {
+    --logo-desktop: 48px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  header .site-logo {
+    height: var(--logo-desktop);
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--preto);
+    padding: 0.8rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background-color: #333;
+    color: #f5d547;
+    border-left: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  .cursos {
+    grid-column: 1 / -1;
+  }
+
+  #cursos-lista {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .filtros {
+    gap: 1rem;
+    border-bottom: none;
+  }
+
+  .filtros button {
+    min-width: 100px;
+    transition: 0.3s;
+  }
+
+  .filtros button:hover {
+    transform: scale(1.05);
+  }
+
+  .sobre,
+  .foto {
+    height: fit-content;
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+}

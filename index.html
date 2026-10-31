@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 - Página Inicial</title>
+  <meta name="description" content="Página inicial WDD 231 com informações sobre o curso e projetos futuros, mostrando habilidades adquiridas em classes anteriores">
+  <meta name="author" content="Bernardo Soares da Silva Filho">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/getDates.js" defer></script>
+  <script src="scripts/curso.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img class="site-logo" src="imagens/logo.svg" alt="Logo BS </>">
+    <span>Bernardo Soares | WDD 231</span>
+    <button id="menu" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <nav>
+    <a href="index.html">Página Inicial</a>
+    <a href="chamber/index.html">Projeto da Câmara</a>
+    <a href="final/index.html">Projeto Final</a>
+  </nav>
+
+  <main>
+    <h1>Página Inicial</h1>
+
+    <section class="sobre">
+      <h2>Sobre Mim</h2>
+      <div class="sobre-texto">
+        <p>Olá! Meu nome é Bernardo Soares, sou natural de Fortaleza, Ceará, e atualmente moro em São José dos Campos - SP com minha família.
+        <br><br>
+        Sou casado com a Natasha e pai de duas meninas incríveis, a Esther de 8 anos e a Clarice de 2 anos. Amo passar tempo com minha família, seja jogando futebol, pescando ou fazendo atividades juntos.
+        <br><br>
+        Sou técnico em Eletrotécnica e atualmente estou cursando Desenvolvimento de Software pela BYU-Idaho. Trabalho remotamente como Auditor de Dados Mestres na empresa CH Master Data / Astrein.
+        <br><br>
+        Sou cristão, membro de A Igreja de Jesus Cristo dos Santos dos Últimos Dias, e tive a oportunidade de servir como missionário de tempo integral na Missão Brasil Belo Horizonte entre 2008 e 2010, uma experiência que marcou minha vida.</p>
+      </div>
+    </section>
+
+    <section class="foto">
+      <h2>Foto do Estudante</h2>
+      <img src="imagens/foto-estudante.webp" alt="Foto do estudante Bernardo Soares" loading="lazy" width="1254" height="1254">
+    </section>
+
+    <section class="cursos">
+      <h2>Cursos de Certificado Web e Computação</h2>
+
+      <div class="filtros">
+        <button id="todos">Todos</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+
+      <div id="cursos-lista">
+        <!-- O JS vai preencher aqui automaticamente -->
+      </div>
+
+      <p id="total-creditos"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/bernardosoares-edu" target="_blank"><img src="imagens/github.svg" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/bernardo-soares" target="_blank"><img src="imagens/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://instagram.com/bernardo8oares" target="_blank"><img src="imagens/instagram.svg" alt="Instagram"></a>
+    </div>
+    <p>&copy; <span id="anoAtual"></span> Bernardo Soares - São José dos Campos, Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>

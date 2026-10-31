@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <!--Arquivos js-->
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/navegacao.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/house-door.svg" alt="logotipo do site" width="512" height="512">
+        <span>Site do Bernardo</span>
+        <button id="botao-de-nav" class="hamburger" aria-label="navegação"></button>
+    </header>
+    <nav id="barra-navegacao" class="navegacao">
+        <ul>
+            <li><a href="#">Notícias e Eventos</a></li>
+            <li class="atual"><a href="#">Templos Dedicados</a></li>
+            <li><a href="#">Templos Anunciados</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Templos Dedicados</h1>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com" target="_blank"><img src="imagens/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="imagens/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="imagens/whatsapp.svg" alt="Whatsapp" width="16" height="16"></a>
+            <a href="https://teams.microsoft.com" target="_blank"><img src="imagens/microsoft-teams.svg" alt="Teams" width="48" height="48"></a>
+        </div>
+        <p>&copy; <span id="ano-atual"></span> - Bernardo Soares</p>
+        <p>Última Alteração: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
