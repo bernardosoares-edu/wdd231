@@ -75,7 +75,8 @@ nav a {
   text-align: center;
 }
 
-nav a.active {
+nav a.active,
+nav a.ativo {
   background-color: #222;
   border-left: 4px solid var(--cor-destaque);
 }

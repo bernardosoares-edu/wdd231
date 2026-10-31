@@ -33,7 +33,8 @@
   }
 
   nav a:hover,
-  nav a.active {
+  nav a.active,
+  nav a.ativo {
     background-color: #333;
     color: #f5d547;
     border-left: none;

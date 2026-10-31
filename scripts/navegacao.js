@@ -10,3 +10,13 @@ botaoMenu.addEventListener("click", () => {
     botaoMenu.textContent = "☰";
   }
 });
+
+const paginaAtual = window.location.pathname;
+const links = document.querySelectorAll("nav a");
+
+links.forEach(link => {
+  if (paginaAtual.includes(link.getAttribute("href"))) {
+    link.classList.add("ativo");
+    link.classList.add("active");
+  }
+});
