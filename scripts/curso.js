@@ -1,4 +1,3 @@
-// Item 5 - Array oficial da BYU - NÃO traduzir as chaves
 const courses = [
   {
     subject: 'CSE',
@@ -84,10 +83,8 @@ function exibirCursos(lista) {
   totalCreditosEl.textContent = `Total de Créditos: ${total}`;
 }
 
-// Inicial
 exibirCursos(courses);
 
-// Item 8 - Filtros com filter()
 document.getElementById("todos").addEventListener("click", () => {
   exibirCursos(courses);
 });
