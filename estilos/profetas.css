@@ -1,0 +1,92 @@
+/* estilos/profetas.css - igual o print */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+header {
+  background-color: #c9c9da;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 1rem 0 1rem;
+}
+
+header h1 {
+  color: #33308a;
+  font-size: 1.8rem;
+}
+
+footer {
+  background-color: #c9c9da;
+  color: #33308a;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  font-weight: 700;
+}
+
+/* GRID - 4 colunas no PC, 1 no celular */
+#cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* CARTÃO LILÁS */
+#cartoes section {
+  background-color: #c9c9da;
+  border: 1px solid #999;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cartoes h2 {
+  color: #33308a;
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+/* CAIXINHA BRANCA */
+#cartoes .info {
+  background-color: #c9c9da;
+  border: 1px solid #fff;
+  width: 100%;
+  max-width: 330px;
+  padding: 0.6rem 0.3rem;
+  margin-bottom: 1rem;
+}
+
+#cartoes .info p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0.15rem 0;
+  color: #2f5363;
+}
+
+/* LETRINHAS VERDES - Nascimento, Lugar, etc */
+#cartoes .info span,
+#cartoes .info strong,
+#cartoes .info b {
+  color: #0dac54;
+  font-weight: 700;
+}
+
+#cartoes img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+}
