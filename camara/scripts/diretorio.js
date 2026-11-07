@@ -32,7 +32,7 @@ const exibirMembros = (membros) => {
     // Caixinha de informações
     info.classList.add('info');
 
-    // Informações com <span> igual tu fez nos profetas
+    // Informações com <span>
     endereco.innerHTML = `<span>Endereço:</span> ${membro.endereco}`;
     telefone.innerHTML = `<span>Telefone:</span> ${membro.telefone}`;
 

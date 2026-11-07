@@ -1,4 +1,4 @@
-/* Parnaíba Câmara de Comércio - Telas Grandes */
+
 @media (min-width: 768px) {
 
     header {
@@ -43,6 +43,7 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         color: var(--dourado);
+        background-color: var(--azul);
     }
 
     #menu {
@@ -52,6 +53,7 @@
     /* NAV vira linha horizontal */
     #navegacao {
         background-color: var(--azul);
+        color: var(--branco);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -85,7 +87,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* CARTÕES - Lista = tabela listrada igual a foto */
+    /* CARTÕES - Lista = tabela listrada */
     #cartoes.lista {
         display: flex;
         flex-direction: column;
@@ -151,7 +153,7 @@
         display: none;
     }
 
-    /* Esconde os rótulos na lista pra ficar limpo igual a foto */
+    /* Esconde os rótulos na lista pra ficar limpo*/
     #cartoes.lista .info span {
         display: none;
     }
@@ -161,7 +163,7 @@
         font-weight: 600;
     }
 
-    /* FOOTER - 3 colunas, MAS MENOR */
+    
     footer {
         background-color: var(--azul);
         color: var(--branco);
