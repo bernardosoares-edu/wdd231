@@ -1,0 +1,65 @@
+[
+  {
+    "nome": "Delta Turismo Parnaíba",
+    "endereco": "Av. Presidente Vargas, 456 - Centro, Parnaíba, PI 64200-000",
+    "telefone": "(86) 3321-4500",
+    "site": "https://deltaturismo-parnaiba.com.br",
+    "imagem": "delta-turismo.webp",
+    "nivel": 3,
+    "descricao": "Passeios de barco pelo Delta do Parnaíba e roteiros ecológicos."
+  },
+  {
+    "nome": "Restaurante Carnaúba",
+    "endereco": "Rua Tabajara, 120 - Centro, Parnaíba, PI 64200-000",
+    "telefone": "(86) 3321-2210",
+    "site": "https://restaurantecarnauaba.com.br",
+    "imagem": "carnauba.webp",
+    "nivel": 2,
+    "descricao": "Culinária regional com frutos do mar e pratos típicos do litoral piauiense."
+  },
+  {
+    "nome": "Pousada Beira Rio",
+    "endereco": "Av. Beira Rio, 78 - Carmo, Parnaíba, PI 64200-000",
+    "telefone": "(86) 3322-8890",
+    "site": "https://pousadabeirario.com.br",
+    "imagem": "beira-rio.webp",
+    "nivel": 3,
+    "descricao": "Hospedagem aconchegante com vista para o Rio Igaraçu."
+  },
+  {
+    "nome": "Mercado Central de Parnaíba",
+    "endereco": "Praça da Graça, s/n - Centro, Parnaíba, PI 64200-000",
+    "telefone": "(86) 3321-3300",
+    "site": "https://mercadocentralparnaiba.com.br",
+    "imagem": "mercado-central.webp",
+    "nivel": 1,
+    "descricao": "Artesanato, produtos locais e gastronomia tradicional."
+  },
+  {
+    "nome": "Ótica Visão Delta",
+    "endereco": "Rua Marechal Pires Ferreira, 210 - Centro, Parnaíba, PI 64200-000",
+    "telefone": "(86) 3321-7744",
+    "site": "https://oticavisaodelta.com.br",
+    "imagem": "otica-visao.webp",
+    "nivel": 2,
+    "descricao": "Óculos de grau, de sol e exames de vista com atendimento especializado."
+  },
+  {
+    "nome": "Construtora Litoral Norte",
+    "endereco": "Av. São Sebastião, 890 - São Francisco, Parnaíba, PI 64200-000",
+    "telefone": "(86) 3322-1122",
+    "site": "https://construtoralitoralnorte.com.br",
+    "imagem": "construtora.webp",
+    "nivel": 1,
+    "descricao": "Construção civil e reformas residenciais e comerciais em Parnaíba."
+  },
+  {
+    "nome": "Escola de Surf Pedra do Sal",
+    "endereco": "Praia da Pedra do Sal, s/n - Parnaíba, PI 64200-000",
+    "telefone": "(86) 99921-3344",
+    "site": "https://surfpedradosal.com.br",
+    "imagem": "surf-pedra.webp",
+    "nivel": 2,
+    "descricao": "Aulas de surf, aluguel de pranchas e passeios na Praia da Pedra do Sal."
+  }
+]

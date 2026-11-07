@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parnaíba - Câmara de Comércio | Diretório</title>
+    <meta name="description"
+        content="Esta página contém uma lista de empresas e outras organizações locais associadas à câmara de comércio.">
+    <meta name="author" content="Bernardo Soares da Silva Filho">
+
+    <meta property="og:title" content="Parnaíba - Câmara de Comércio">
+    <meta property="og:description"
+        content="Esta página contém uma lista de empresas e outras organizações locais associadas à câmara de comércio.">
+    <meta property="og:image" content="https://bernardosoares-edu.github.io/wdd231/camara/imagens/logo-camara.webp">
+    <meta property="og:url" content="https://bernardosoares-edu.github.io/wdd231/camara/diretorio.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo-camara.ico">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="imagens/logo-camara.webp" alt="Logo Parnaíba Câmara de Comércio" width="60" height="60">
+            <div class="titulo">
+                <span class="nome-cidade">Parnaíba</span>
+                <span class="nome-camara">Câmara de Comércio</span>
+            </div>
+        </div>
+        <button id="menu" aria-label="Abrir menu">☰</button>
+    </header>
+
+    <nav id="navegacao">
+        <a href="index.html">Página Inicial</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="diretorio.html" class="ativo">Diretório</a>
+        <a href="associe-se.html">Associe-se</a>
+    </nav>
+
+    <main>
+        <h1>Diretório</h1>
+
+        <div class="botoes-visualizacao">
+            <button id="grade">⏹️ Grade</button>
+            <button id="lista">📋 Lista</button>
+        </div>
+
+        <div id="cartoes"></div>
+    </main>
+
+    <footer>
+        <div class="footer-esquerda">
+            <p><strong>Parnaíba Câmara de Comércio</strong></p>
+            <p>Av. Presidente Vargas, 123 - Centro</p>
+            <p>Parnaíba, PI 64200-000</p>
+            <p>info@parnaibacc.org</p>
+            <p>(86) 3321-2300</p>
+        </div>
+
+        <div class="footer-meio">
+            <div class="redes-sociais">
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsapp.svg"
+                        alt="whatsapp"></a>
+                <a href="https://linkedin.com/in/bernardo-soares" target="_blank"><img src="imagens/linkedin.svg"
+                        alt="LinkedIn"></a>
+                <a href="https://instagram.com/bernardo8oares" target="_blank"><img src="imagens/instagram.svg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-direita">
+            <p><strong>Projeto de Aula WDD231</strong></p>
+            <p>Bernardo Soares da Silva Filho</p>
+            <p>&copy; <span id="ano-atual"></span> Parnaíba Câmara de Comércio</p>
+            <p>Última Modificação: <span id="ultima-modificacao"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
