@@ -1,4 +1,4 @@
-/* Parnaíba Câmara de Comércio - Telas Pequenas + Variáveis + Base */
+/* Parnaíba Câmara de Comércio - Variáveis + Base */
 :root {
     --azul: #0A3D62;
     --azul-claro: #155a8a;
@@ -159,7 +159,8 @@ main h1 {
     text-align: center;
 }
 
-.hero-texto h1 {
+.hero-texto h2,
+.hero-texto .hero-titulo {
     color: var(--branco);
     margin: 0 0 0.5rem;
     font-size: 1.6rem;
@@ -242,7 +243,6 @@ main h1 {
     gap: 1rem;
 }
 
-/* ===== CORRIGIDO - Imagem centralizada ===== */
 .spotlight-card {
     background: var(--branco);
     border-radius: 8px;

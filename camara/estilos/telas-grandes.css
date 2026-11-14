@@ -135,29 +135,24 @@
     }
 
     #cartoes.lista .info p:nth-child(1) {
-        /* Endereço */
         grid-column: 2;
     }
 
     #cartoes.lista .info p:nth-child(2) {
-        /* Telefone */
         grid-column: 3;
     }
 
     #cartoes.lista .info p:nth-child(4) {
-        /* Nível */
         grid-column: 4;
         font-weight: 700;
         color: var(--azul);
     }
 
     #cartoes.lista .info p:nth-child(3) {
-        /* Site */
         grid-column: 5;
     }
 
     #cartoes.lista .info p:nth-child(5) {
-        /* Descrição */
         display: none;
     }
 
@@ -181,7 +176,7 @@
         text-align: center;
     }
 
-    .hero-texto h1 {
+    .hero-texto h2, .hero-texto .hero-titulo {
         font-size: 2.2rem;
     }
 

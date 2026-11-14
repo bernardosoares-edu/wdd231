@@ -1,4 +1,3 @@
-// scripts/inicio.js - Baseado no diretorio.js
 
 const url = 'dados/membros.json';
 const spotlightsContainer = document.querySelector('#spotlights-container');
@@ -66,7 +65,7 @@ async function buscarPrevisao() {
 buscarClima();
 buscarPrevisao();
 
-// ===== SPOTLIGHTS - Igual ao exibirMembros do diretorio.js =====
+// ===== SPOTLIGHTS =====
 async function obterDadosDeMembros(url) {
   const resposta = await fetch(url);
   const dados = await resposta.json();
@@ -78,7 +77,7 @@ obterDadosDeMembros(url);
 const exibirSpotlights = (membros) => {
   if (!spotlightsContainer) return;
 
-  // Filtra só Ouro (3) e Prata (2), igual o requisito pede
+  // Filtra só Ouro (3) e Prata (2)
   const elegiveis = membros.filter((membro) => membro.nivel === 3 || membro.nivel === 2);
 
   // Embaralha e pega 3 aleatórios
@@ -86,7 +85,7 @@ const exibirSpotlights = (membros) => {
   const selecionados = embaralhados.slice(0, 3);
 
   selecionados.forEach((membro) => {
-    // Cria os elementos - mesmo estilo do diretorio.js
+    // Cria os elementos
     let cartao = document.createElement('article');
     let nome = document.createElement('h3');
     let info = document.createElement('div');
@@ -105,13 +104,11 @@ const exibirSpotlights = (membros) => {
       cartao.classList.add('spotlight-card', 'prata');
     }
 
-    // Nome
+   
     nome.textContent = membro.nome;
 
-    // Caixinha de informações
     info.classList.add('info');
 
-    // Informações com <span> - igual diretorio.js
     endereco.innerHTML = `<span>Endereço:</span> ${membro.endereco}`;
     telefone.innerHTML = `<span>Telefone:</span> ${membro.telefone}`;
 
@@ -122,7 +119,6 @@ const exibirSpotlights = (membros) => {
     linkSite.textContent = "Visitar site";
     site.appendChild(linkSite);
 
-    // Nível: 2 = Prata, 3 = Ouro
     let nivelTexto = '';
     if (membro.nivel === 3) {
       nivelTexto = '⭐ Membro Ouro';
@@ -132,17 +128,15 @@ const exibirSpotlights = (membros) => {
     nivel.innerHTML = `<span>Nível:</span> ${nivelTexto}`;
     nivel.classList.add('nivel-membro');
 
-    // Descrição
     descricao.textContent = membro.descricao;
 
-    // Logo - igual diretorio.js
     logo.setAttribute('src', `imagens/${membro.imagem}`);
     logo.setAttribute('alt', `Logo de ${membro.nome}`);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('width', '120');
     logo.setAttribute('height', '120');
 
-    // Monta o cartão na ordem certa - igual diretorio.js
+   
     info.appendChild(endereco);
     info.appendChild(telefone);
     info.appendChild(site);
@@ -157,7 +151,6 @@ const exibirSpotlights = (membros) => {
   });
 };
 
-// Menu mobile - copiado igual do diretorio.js
 const botaoMenu = document.querySelector('#menu');
 const navegacao = document.querySelector('#navegacao');
 
@@ -166,6 +159,6 @@ botaoMenu.addEventListener('click', () => {
   botaoMenu.textContent = navegacao.classList.contains('aberta') ? '✖' : '☰';
 });
 
-// Footer - ano atual e última modificação - copiado igual do diretorio.js
+
 document.querySelector('#ano-atual').textContent = new Date().getFullYear();
 document.querySelector('#ultima-modificacao').textContent = document.lastModified;
