@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parnaíba - Câmara de Comércio | Página Inicial</title>
+    <meta name="description"
+        content="Câmara de Comércio de Parnaíba, PI - Conectando empresas locais, promovendo o Delta do Parnaíba, eventos e oportunidades para o comércio da região.">
+    <meta name="author" content="Bernardo Soares da Silva Filho">
+
+    <meta property="og:title" content="Parnaíba - Câmara de Comércio | Página Inicial">
+    <meta property="og:description" content="Conectando empresas, promovendo o comércio local e o Delta do Parnaíba.">
+    <meta property="og:image" content="https://bernardosoares-edu.github.io/wdd231/camara/imagens/logo-camara.webp">
+    <meta property="og:url" content="https://bernardosoares-edu.github.io/wdd231/camara/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo-camara.ico">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/inicio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="imagens/logo-camara.jpg" alt="Logo Parnaíba Câmara de Comércio" width="60" height="60">
+            <div class="titulo">
+                <span class="nome-cidade">Parnaíba</span>
+                <span class="nome-camara">Câmara de Comércio</span>
+            </div>
+        </div>
+        <button id="menu" aria-label="Abrir menu">☰</button>
+    </header>
+
+    <nav id="navegacao">
+        <a href="index.html" class="ativo">Página Inicial</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="diretorio.html">Diretório</a>
+        <a href="associe-se.html">Associe-se</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="imagens/porto-das-barcas.webp" alt="Porto das Barcas em Parníba" width="1258" height="600"
+            fetchpriority="high">
+        <div class="hero-texto">
+            <h1>Bem-vindo a Parnaíba</h1>
+            <p>Onde o rio encontra o mar e os negócios encontram oportunidades.</p>
+            <a href="associe-se.html" class="cta-btn">Associe-se à Câmara</a>
+        </div>
+    </section>
+
+
+    <main>
+
+        <h1>Câmara de Comércio de Parnaíba</h1>
+
+        <!-- EVENTOS + CLIMA -->
+        <div class="inicio-grid">
+            <section class="eventos card">
+                <h2>Eventos Atuais</h2>
+                <article>
+                    <h3>Feira do Comércio Local</h3>
+                    <p><strong>22 de Novembro | Praça da Graça - Centro</strong></p>
+                    <p>Artesanato, gastronomia e produtos locais com mais de 40 expositores de Parnaíba.</p>
+                </article>
+                <article>
+                    <h3>Workshop: Turismo no Delta</h3>
+                    <p><strong>29 de Novembro | Auditório da Câmara - 19h</strong></p>
+                    <p>Como atrair mais visitantes para o Delta do Parnaíba e aumentar suas vendas.</p>
+                </article>
+                <article>
+                    <h3>Encontro de Empreendedores</h3>
+                    <p><strong>05 de Dezembro | Porto das Barcas - 18h30</strong></p>
+                    <p>Networking, troca de experiências e novos parceiros para o seu negócio.</p>
+                </article>
+            </section>
+
+            <section class="clima card">
+                <h2>Clima em Parnaíba</h2>
+                <div id="clima-atual">
+                    <p>Carregando clima...</p>
+                </div>
+                <h3>Previsão para os próximos 3 dias</h3>
+                <div id="previsao"></div>
+            </section>
+        </div>
+
+        <!-- SPOTLIGHTS -->
+        <section class="spotlights">
+            <h2>Empresas em Destaque</h2>
+            <div id="spotlights-container" class="spotlights-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-esquerda">
+            <p><strong>Parnaíba Câmara de Comércio</strong></p>
+            <p>Av. Presidente Vargas, 123 - Centro</p>
+            <p>Parnaíba, PI 64200-000</p>
+            <p>info@parnaibacc.org</p>
+            <p>(86) 3321-2300</p>
+        </div>
+
+        <div class="footer-meio">
+            <div class="redes-sociais">
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsapp.svg" width="20"
+                        height="20" alt="whatsapp"></a>
+                <a href="https://linkedin.com/in/bernardo-soares" target="_blank"><img src="imagens/linkedin.svg"
+                        width="20" height="20" alt="LinkedIn"></a>
+                <a href="https://instagram.com/bernardo8oares" target="_blank"><img src="imagens/instagram.svg"
+                        width="20" height="20" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-direita">
+            <p><strong>Projeto de Aula WDD231</strong></p>
+            <p>Bernardo Soares da Silva Filho</p>
+            <p>&copy; <span id="ano-atual"></span> Parnaíba Câmara de Comércio</p>
+            <p>Última Modificação: <span id="ultima-modificacao"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

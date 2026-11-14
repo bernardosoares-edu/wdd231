@@ -118,7 +118,6 @@ main h1 {
     justify-content: center;
     text-decoration: none;
     flex-shrink: 0;
-    
 }
 
 .redes-sociais a:hover {
@@ -134,9 +133,173 @@ main h1 {
     display: block;
 }
 
+/* ===== HOME - INÍCIO / CELULAR ===== */
+.hero {
+    position: relative;
+    margin: 0 0 1rem 0;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-texto {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background: rgba(10, 61, 98, 0.85);
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-texto h1 {
+    color: var(--branco);
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+}
+
+.hero-texto p {
+    margin: 0.3rem 0;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: var(--dourado);
+    color: var(--azul);
+    font-weight: 800;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    margin-top: 0.6rem;
+    text-decoration: none;
+}
+
+.inicio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background: var(--branco);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--azul);
+    margin-top: 0;
+}
+
+.card h3 {
+    color: var(--azul-claro);
+    margin-bottom: 0.2rem;
+}
+
+.clima {
+    text-align: center;
+}
+
+.temp-grande {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: var(--azul);
+}
+
+.desc-clima {
+    text-transform: capitalize;
+}
+
+.dia-previsao {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+.spotlights {
+    padding: 1rem 0;
+}
+
+.spotlights h2 {
+    text-align: center;
+    color: var(--azul);
+}
+
+.spotlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* ===== CORRIGIDO - Imagem centralizada ===== */
+.spotlight-card {
+    background: var(--branco);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-card img {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.spotlight-card h3 {
+    color: var(--azul);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.spotlight-card .info {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.spotlight-card .info span {
+    font-weight: 700;
+    color: var(--azul);
+}
+
+.spotlight-card .info a {
+    color: var(--azul-claro);
+}
+
+.spotlight-card.ouro {
+    border-top: 6px solid var(--dourado);
+}
+
+.spotlight-card.prata {
+    border-top: 6px solid #b0b8c1;
+}
+
+.nivel-membro {
+    font-weight: 700;
+    color: var(--azul-claro);
+}
+
 /* ===== CELULAR ===== */
 @media (max-width: 767px) {
-
     header {
         background-color: var(--azul);
         color: var(--branco);
@@ -224,12 +387,10 @@ main h1 {
         color: var(--dourado);
     }
 
-    /* GRADE no celular */
     #cartoes.grade {
         grid-template-columns: 1fr;
     }
 
-    /* LISTA no celular - listrada, empilhada */
     #cartoes.lista {
         display: flex;
         flex-direction: column;

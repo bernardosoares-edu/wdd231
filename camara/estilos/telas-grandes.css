@@ -1,4 +1,3 @@
-
 @media (min-width: 768px) {
 
     header {
@@ -69,7 +68,7 @@
     }
 
     #navegacao a:hover {
-        background: rgba(255,255,255,0.15);
+        background: rgba(255, 255, 255, 0.15);
         color: var(--dourado);
     }
 
@@ -135,21 +134,30 @@
         font-size: 0.95rem;
     }
 
-    #cartoes.lista .info p:nth-child(1) { /* Endereço */
+    #cartoes.lista .info p:nth-child(1) {
+        /* Endereço */
         grid-column: 2;
     }
-    #cartoes.lista .info p:nth-child(2) { /* Telefone */
+
+    #cartoes.lista .info p:nth-child(2) {
+        /* Telefone */
         grid-column: 3;
     }
-    #cartoes.lista .info p:nth-child(4) { /* Nível */
+
+    #cartoes.lista .info p:nth-child(4) {
+        /* Nível */
         grid-column: 4;
         font-weight: 700;
         color: var(--azul);
     }
-    #cartoes.lista .info p:nth-child(3) { /* Site */
+
+    #cartoes.lista .info p:nth-child(3) {
+        /* Site */
         grid-column: 5;
     }
-    #cartoes.lista .info p:nth-child(5) { /* Descrição */
+
+    #cartoes.lista .info p:nth-child(5) {
+        /* Descrição */
         display: none;
     }
 
@@ -163,7 +171,38 @@
         font-weight: 600;
     }
 
-    
+    /* ===== HOME - DESKTOP ===== */
+    /* Layout muda aqui: mobile = 1 coluna, desktop = colunas */
+    .hero-texto {
+        left: 5%;
+        right: auto;
+        max-width: 460px;
+        bottom: 2rem;
+        text-align: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.2rem;
+    }
+
+    .inicio-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .spotlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotlight-card a {
+        margin-top: auto;
+    }
+
     footer {
         background-color: var(--azul);
         color: var(--branco);
