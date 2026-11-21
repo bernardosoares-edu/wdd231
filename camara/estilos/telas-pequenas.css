@@ -528,6 +528,7 @@ main h1 {
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    animation: subirCartao 0.8s ease-out both;
 }
 
 .card-nivel button {
@@ -578,9 +579,6 @@ dialog ul {
     }
 }
 
-.card-nivel {
-    animation: subirCartao 0.8s ease-out both;
-}
 
 .card-nivel.sem-fins {
     animation-delay: 0.1s;
