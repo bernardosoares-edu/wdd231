@@ -50,39 +50,45 @@
 
         <div class="associe-se-grid">
 
-            <!-- FORMULÁRIO -->
             <form method="get" action="agradecimento.html" class="form-associe-se">
-                <label>Nome*
+                <label>
+                    <span>Nome <span class="asterisco">*</span></span>
                     <input type="text" name="nome" title="Digite seu nome" autocomplete="given-name" required>
                 </label>
 
-                <label>Sobrenome*
+                <label>
+                    <span>Sobrenome <span class="asterisco">*</span></span>
                     <input type="text" name="sobrenome" title="Digite seu sobrenome" autocomplete="family-name"
                         required>
                 </label>
 
-                <label>Cargo na Organização
+                <label>
+                    <span>Cargo na Organização</span>
                     <input type="text" id="cargo-na-organizacao" name="cargo-na-organizacao"
                         title="Apenas letras, hífens e espaços, mínimo de 7 caracteres."
                         autocomplete="cargo-na-organizacao" pattern="[a-zA-Z\- ]{7,}">
                 </label>
 
-                <label>E-mail*
+                <label>
+                    <span>E-mail <span class="asterisco">*</span></span>
                     <input type="email" name="email" title="Digite um e-mail válido" autocomplete="email"
                         placeholder="exemplo@email.com" required>
                 </label>
 
-                <label>Celular*
+                <label>
+                    <span>Celular <span class="asterisco">*</span></span>
                     <input type="tel" name="celular" title="Digite seu celular" autocomplete="tel"
                         placeholder="(86) 99999-9999" required>
                 </label>
 
-                <label>Nome da Organização*
+                <label>
+                    <span>Nome da Organização <span class="asterisco">*</span></span>
                     <input type="text" id="organizacao" name="organizacao" title="Digite o nome da sua organização"
                         autocomplete="organizacao" required>
                 </label>
 
-                <label for="membership">Nível de Membresia*
+                <label for="membership">
+                    <span>Nível de Membresia <span class="asterisco">*</span></span>
                     <select id="membership" name="membership" required>
                         <option value="">Selecione um nível...</option>
                         <option value="np">NP Membership</option>
@@ -92,7 +98,8 @@
                     </select>
                 </label>
 
-                <label>Descrição do Negócio
+                <label>
+                    <span>Descrição do Negócio</span>
                     <textarea name="descricao" title="Descreva seu negócio" rows="4"></textarea>
                 </label>
 

@@ -515,6 +515,14 @@ main h1 {
     background: #2a6b42;
 }
 
+.asterisco {
+    color: red;
+    display: inline;
+}
+
+.form-associe-se label > span {
+    display: block;
+}
 /* Cartões de nível */
 .niveis {
     margin-top: 2rem;
