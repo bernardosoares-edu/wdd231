@@ -76,6 +76,9 @@ function exibirCursos(lista) {
     }
 
     card.innerHTML = `<span>${curso.subject} ${curso.number}</span>`;
+    card.addEventListener("click", () => {
+      exibirInfosDoCurso(curso);
+    });
     listaCursos.appendChild(card);
   });
 
@@ -98,3 +101,23 @@ document.getElementById("wdd").addEventListener("click", () => {
   const filtrado = courses.filter(c => c.subject === "WDD");
   exibirCursos(filtrado);
 });
+
+const infosDoCurso = document.querySelector('#infos-do-curso');
+
+function exibirInfosDoCurso(curso) {
+  infosDoCurso.innerHTML = `
+    <button id="fecharModal">❌</button>
+    <h2>${curso.subject} ${curso.number}</h2>
+    <h3>${curso.title}</h3>
+    <p><strong>Créditos</strong>: ${curso.credits}</p>
+    <p><strong>Certificado</strong>: ${curso.certificate}</p>
+    <p>${curso.description}</p>
+    <p><strong>Tecnologias</strong>: ${curso.technology.join(', ')}</p>
+  `;
+  infosDoCurso.showModal();
+
+  const botaoFechar = document.querySelector('#fecharModal');
+  botaoFechar.addEventListener("click", () => {
+    infosDoCurso.close();
+  });
+}

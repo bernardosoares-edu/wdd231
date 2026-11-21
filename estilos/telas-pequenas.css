@@ -222,3 +222,78 @@ footer .social a:hover img {
   transform: scale(1.1);
   transition: 0.2s;
 }
+
+/* The Modal Dialog Box - Melhorado */
+#infos-do-curso {
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--branco);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#infos-do-curso::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+#infos-do-curso div {
+  display: grid;
+  grid-template-columns: auto 44px;
+  align-items: center;
+  background-color: var(--cor-principal);
+  padding: 1rem 1.2rem;
+}
+
+#infos-do-curso h2 {
+  margin: 0;
+  color: var(--cor-principal);
+  font-size: 1.6rem;
+  padding: 2.8rem 1.2rem 0;
+}
+
+#infos-do-curso button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #e63946;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#infos-do-curso button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  transform: scale(1.05);
+}
+
+#infos-do-curso h3 {
+  padding: 0.5rem 1.2rem 0;
+  margin: 0;
+  color: var(--cor-principal);
+  font-size: 1.15rem;
+}
+
+#infos-do-curso p {
+  padding: 0.4rem 1.2rem;
+  margin: 0;
+  color: #375170;
+  line-height: 1.5;
+}
+
+#infos-do-curso p:last-child {
+  padding-bottom: 1.2rem;
+}

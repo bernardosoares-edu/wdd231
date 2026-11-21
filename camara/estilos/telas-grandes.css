@@ -168,6 +168,11 @@
 
     /* ===== HOME - DESKTOP ===== */
     /* Layout muda aqui: mobile = 1 coluna, desktop = colunas */
+
+    .hero img {
+        height: 500px;
+    }
+
     .hero-texto {
         left: 5%;
         right: auto;
@@ -176,7 +181,8 @@
         text-align: center;
     }
 
-    .hero-texto h2, .hero-texto .hero-titulo {
+    .hero-texto h2,
+    .hero-texto .hero-titulo {
         font-size: 2.2rem;
     }
 
@@ -227,5 +233,29 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .associe-se-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .niveis {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .niveis h2 {
+        grid-column: 1 / -1;
+    }
+
+    .card-nivel {
+        margin-bottom: 0;
     }
 }
