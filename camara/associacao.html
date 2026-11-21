@@ -63,8 +63,8 @@
 
                 <label>Cargo na Organização
                     <input type="text" id="cargo-na-organizacao" name="cargo-na-organizacao"
-                        title="Digite seu cargo. Mínimo 7 caracteres, só letras, traços e espaços."
-                        autocomplete="cargo-na-organizacao" pattern="[A-Za-zÀ-ÿ \-]{7,}" required>
+                        title="Apenas letras, hífens e espaços, mínimo de 7 caracteres."
+                        autocomplete="cargo-na-organizacao" pattern="[a-zA-Z\- ]{7,}">
                 </label>
 
                 <label>E-mail*
@@ -81,7 +81,7 @@
                     <input type="text" id="organizacao" name="organizacao" title="Digite o nome da sua organização"
                         autocomplete="organizacao" required>
                 </label>
-                
+
                 <label for="membership">Nível de Membresia
                     <select id="membership" name="membership" required>
                         <option value="">Selecione um nível...</option>
