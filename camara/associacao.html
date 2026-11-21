@@ -64,7 +64,7 @@
                 <label>Cargo na Empresa
                     <input type="text" name="cargo-na-organizacao"
                         title="Digite seu cargo. Mínimo 7 caracteres, só letras, traços e espaços."
-                        autocomplete="cargo-na-organizacao" pattern="[A-Za-zÀ-ÿ \-]{7,}">
+                        autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ \-]{7,}" required>
                 </label>
 
                 <label>E-mail*
@@ -79,16 +79,16 @@
 
                 <label>Nome da Organização
                     <input type="text" name="organizacao" title="Digite o nome da sua organização"
-                        autocomplete="organizacao" required>
+                        autocomplete="organization" required>
                 </label>
 
-                <label>Nível de Associação
-                    <select name="nivel-membresia" required>
+                <label for="membership">Nível de Membresia
+                    <select id="membership" name="membership" required>
                         <option value="">Selecione um nível...</option>
-                        <option value="np">Associação NP</option>
-                        <option value="bronze">Associação Bronze</option>
-                        <option value="silver">Associação Prata</option>
-                        <option value="gold">Associação Ouro</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
                     </select>
                 </label>
 
